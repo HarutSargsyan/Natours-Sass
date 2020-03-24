@@ -1,0 +1,54 @@
+
+/* keyframes for animation, we mention for ex. in 75% of animation what will be happening  */
+
+@keyframes moveInLeft {
+    /*moveInLeft just a name*/
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+      /* it normaly goes left to right, we want right to left*/
+    }
+    80% {
+      transform: translateX(
+        10px
+      ); /*we can even rotate with help of rotate(xdeg)*/
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+      /*  what it looks liek normally*/
+    }
+  }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes logo {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
